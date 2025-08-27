@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AGB</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header img {
+  width: 520px;
+  max-width: 90%;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.underline {
+  width: 440px;
+  height: 3px;
+  background: white;
+  border-radius: 1.5px;
+  margin: 10px auto 5px;
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-icons a {
+  margin: 0 20px;
+  opacity: 0.75;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.social-icons i {
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 6px rgba(240, 38, 38, 0.8);
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  line-height: 1.6;
+  color: #f1f1f1;
+  backdrop-filter: blur(5px);
+  flex: 1;
+}
+
+main h1, main h2 {
+  color: #ffffff;
+}
+
+main a {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+main a:hover {
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0 20px;
+  background-color: #000 !important;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+footer .footer-icons a {
+  margin: 0 15px;
+  opacity: 0.75;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+footer .footer-icons a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+footer .footer-icons i {
+  font-size: 24px;
+  color: white;
+}
+
+footer img {
+  margin-top: 20px;
+  width: 80px;
+  height: auto;
+}
+
+.footer-links {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ===== MOBILE & TABLET RESPONSIVE ===== */
+@media (max-width: 900px) {
+  main {
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  header img {
+    width: 80%;
+  }
+  .underline {
+    width: 52%;
+  }
+  .social-icons i {
+    font-size: 32px;
+  }
+  main h1 {
+    font-size: 24px;
+  }
+  main h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 15px 15px 25px;
+    line-height: 1.5;
+  }
+  .social-icons {
+    gap: 20px;
+  }
+  .social-icons a {
+    margin: 0 10px;
+  }
+  footer .footer-icons a {
+    margin: 0 10px;
+  }
+  footer .footer-icons i {
+    font-size: 20px;
+  }
+  .footer-links {
+    font-size: 13px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  .footer-links a {
+    margin: 0 5px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <img src="logo2.png" alt="Logo">
+  <div class="underline"></div>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/bodenlos_event"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.tiktok.com/@bodenlos_event"><i class="fab fa-tiktok"></i></a>
+  </div>
+</header>
+
+<main>
+  <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
+
+  <h2>1. Geltungsbereich</h2>
+  <p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge, die über die Website „Bodenlos“ zwischen den Veranstaltern Dominik Haas und Luca Raffael Moser („Veranstalter“) und den Kunden, die Eintrittskarten erwerben, abgeschlossen werden.</p>
+  <p>Abweichende Bedingungen des Kunden werden nicht anerkannt, es sei denn, der Veranstalter stimmt ihrer Geltung ausdrücklich schriftlich zu.</p>
+
+  <h2>2. Vertragspartner und Kontakt</h2>
+  <p>Vertragspartner sind:</p>
+  <p><strong>Dominik Haas & Luca Raffael Moser<br>
+  Kratochwjlestraße 8/7/2.3<br>
+  1220 Wien, Österreich<br>
+  E-Mail: <a href="mailto:bodenlos.info@gmail.com">bodenlos.info@gmail.com</a></strong></p>
+
+  <h2>3. Vertragsabschluss</h2>
+  <p>Der Erwerb von Tickets erfolgt über die Website mittels eines externen Ticketverkaufssystems. Mit dem Absenden der Bestellung gibt der Kunde ein verbindliches Angebot zum Kauf der ausgewählten Tickets ab.</p>
+  <p>Der Vertrag kommt zustande, sobald der Veranstalter die Bestellung per E-Mail bestätigt oder die Bezahlung erfolgreich abgeschlossen wurde.</p>
+
+  <h2>4. Preise und Zahlung</h2>
+  <p>Alle auf der Website angegebenen Preise sind Endpreise in Euro und enthalten die gesetzliche Umsatzsteuer.</p>
+  <p>Die Zahlung erfolgt über die vom Ticketanbieter angebotenen Zahlungsmethoden. Das Ticket gilt erst nach vollständigem Zahlungseingang als erworben und berechtigt zum Einlass.</p>
+  <p>Es können zusätzlich vom Zahlungsanbieter Gebühren erhoben werden, auf die der Veranstalter keinen Einfluss hat.</p>
+
+  <h2>5. Ticketversand und Zugang</h2>
+  <p>Tickets werden als elektronische Eintrittskarten (E-Tickets) per E-Mail versendet. Der Kunde ist verpflichtet, eine korrekte und erreichbare E-Mail-Adresse anzugeben.</p>
+  <p>Für den Einlass ist das Vorzeigen des gültigen Tickets in digitaler oder ausgedruckter Form erforderlich.</p>
+
+  <h2>6. Stornierung, Rückgabe und Widerruf</h2>
+  <p>Gemäß §18 FAGG besteht bei Freizeitveranstaltungen mit festem Termin kein Widerrufsrecht für Verbraucher.</p>
+  <p>Eine Stornierung oder Rückgabe bereits erworbener Tickets ist daher ausgeschlossen, es sei denn, die Veranstaltung wird vom Veranstalter abgesagt.</p>
+
+  <h2>7. Absage, Verschiebung oder Änderung der Veranstaltung</h2>
+  <p>Der Veranstalter behält sich vor, die Veranstaltung aus wichtigen Gründen (z.B. behördliche Anordnungen, höhere Gewalt, unvorhersehbare Ereignisse) zu verschieben oder abzusagen.</p>
+  <p>Im Falle einer Absage erhalten Kunden den vollen Ticketpreis zurück. Weitergehende Ansprüche, insbesondere Schadensersatz, sind ausgeschlossen.</p>
+  <p>Bei Verschiebung der Veranstaltung behalten die Tickets ihre Gültigkeit für den Ersatztermin.</p>
+
+  <h2>8. Hausrecht und Verhaltensregeln</h2>
+  <p>Der Veranstalter übt das Hausrecht aus. Besucher haben den Anweisungen des Personals Folge zu leisten.</p>
+  <p>Bei Verstößen gegen die Hausordnung, Störungen oder unsittlichem Verhalten kann der Zutritt verweigert oder der Ausschluss von der Veranstaltung ohne Rückerstattung des Ticketpreises erfolgen.</p>
+
+  <h2>9. Haftung</h2>
+  <p>Der Veranstalter haftet nur für Schäden, die auf Vorsatz oder grober Fahrlässigkeit beruhen. Die Haftung für leichte Fahrlässigkeit ist ausgeschlossen, sofern keine wesentlichen Vertragspflichten verletzt wurden.</p>
+  <p>Die Teilnahme an der Veranstaltung erfolgt auf eigene Gefahr. Für Verlust oder Beschädigung von persönlichen Gegenständen übernimmt der Veranstalter keine Haftung.</p>
+
+  <h2>10. Datenschutz</h2>
+  <p>Die Erhebung und Verarbeitung personenbezogener Daten erfolgt gemäß unserer <a href="datenschutz.html">Datenschutzerklärung</a>. Der Kunde stimmt der Verarbeitung seiner Daten zu.</p>
+
+  <h2>11. Urheberrechte</h2>
+  <p>Alle Inhalte der Veranstaltung, insbesondere Bild- und Tonaufnahmen, sind urheberrechtlich geschützt. Die Verwendung ohne ausdrückliche Genehmigung ist untersagt.</p>
+
+  <h2>12. Sonstiges</h2>
+  <p>Sollten einzelne Bestimmungen dieser AGB unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>
+  <p>Es gilt österreichisches Recht. Gerichtsstand ist, soweit zulässig, Wien.</p>
+
+  <h2>13. Kontakt</h2>
+  <p>Für Fragen und Anliegen erreichen Sie uns unter:<br>
+  Dominik Haas & Luca Raffael Moser<br>
+  E-Mail: <a href="mailto:bodenlos.info@gmail.com">bodenlos.info@gmail.com</a></p>
+</main>
+
+<footer>
+  <div class="footer-icons">
+    <a href="https://www.instagram.com/bodenlos_event"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.tiktok.com/@bodenlos_event"><i class="fab fa-tiktok"></i></a>
+  </div>
+  <img src="logo2.png" alt="Logo">
+  <div style="margin-top: 10px;">&copy; 2025 Bodenlos</div>
+  <div class="footer-links">
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a> |
+    <a href="index.html">Startseite</a> |
+    <a href="widerruf.html">Widerruf</a>
+  </div>
+</footer>
+
+</body>
+</html>

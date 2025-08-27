@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressum</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header img {
+  width: 520px;
+  max-width: 90%;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.underline {
+  width: 440px;
+  height: 3px;
+  background: white;
+  border-radius: 1.5px;
+  margin: 10px auto 5px;
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-icons a {
+  margin: 0 20px;
+  opacity: 0.75;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.social-icons i {
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 6px rgba(240, 38, 38, 0.8);
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  line-height: 1.6;
+  color: #f1f1f1;
+  backdrop-filter: blur(5px);
+  flex: 1;
+}
+
+main h1, main h2 {
+  color: #ffffff;
+}
+
+main a {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+main a:hover {
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0 20px;
+  background-color: #000 !important;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+footer .footer-icons a {
+  margin: 0 15px;
+  opacity: 0.75;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+footer .footer-icons a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+footer .footer-icons i {
+  font-size: 24px;
+  color: white;
+}
+
+footer img {
+  margin-top: 20px;
+  width: 80px;
+  height: auto;
+}
+
+.footer-links {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ===== MOBILE & TABLET RESPONSIVE ===== */
+@media (max-width: 900px) {
+  main {
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  header img {
+    width: 80%;
+  }
+  .underline {
+    width: 52%;
+  }
+  .social-icons i {
+    font-size: 32px;
+  }
+  main h1 {
+    font-size: 24px;
+  }
+  main h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 15px 15px 25px;
+    line-height: 1.5;
+  }
+  .social-icons {
+    gap: 20px;
+  }
+  .social-icons a {
+    margin: 0 10px;
+  }
+  footer .footer-icons a {
+    margin: 0 10px;
+  }
+  footer .footer-icons i {
+    font-size: 20px;
+  }
+  .footer-links {
+    font-size: 13px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  .footer-links a {
+    margin: 0 5px;
+  }
+}
+#menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  color: white;
+  transition: left 0.3s ease;
+  z-index: 9998;
+  padding-top: 60px;
+}
+
+#side-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#side-menu li {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#side-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#side-menu li a:hover {
+  text-decoration: underline;
+}
+
+#close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+<!-- Hamburger-Icon -->
+<div id="menu-toggle">
+  <i class="fas fa-bars"></i>
+</div>
+
+<!-- Seitenmenü -->
+<nav id="side-menu">
+  <div id="close-btn">&times;</div>
+  <ul>
+    <li><a href="index.html">Startseite</a></li>
+    <li><a href="index.html #about">Über Bodenlos</a></li>
+    <li><a href="#why">Warum Bodenlos?</a></li>
+    <li><a href="impressum.html">Impressum</a></li>
+    <li><a href="datenschutz.html">Datenschutz</a></li>
+  </ul>
+</nav>
+
+<header>
+  <img src="logo2.png" alt="Logo">
+  <div class="underline"></div>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/bodenlos_event"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.tiktok.com/@bodenlos_event"><i class="fab fa-tiktok"></i></a>
+  </div>
+</header>
+
+<main>
+  <h1>Impressum</h1>
+
+  <p><strong>Verantwortlich für den Inhalt dieser Website:</strong></p>
+  <p>
+    Dominik Haas<br />
+    Luca Raffael Moser<br />
+    Kratochwjlestraße 8/7/2.3<br />
+    1220 Wien<br />
+    Österreich
+  </p>
+
+  <p><strong>Kontakt:</strong><br />
+    E-Mail: <a href="mailto:bodenlos.info@gmail.com">bodenlos.info@gmail.com</a>
+  </p>
+
+  <p><strong>Art der Website:</strong><br />
+    Diese Website dient der Ankündigung und dem Verkauf von Tickets für das Event "Bodenlos".
+  </p>
+
+  <p><strong>Haftung für Inhalte:</strong><br />
+    Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr.
+  </p>
+
+  <p><strong>Haftung für Links:</strong><br />
+    Unsere Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte übernehmen wir keine Verantwortung.
+  </p>
+
+  <p><strong>Urheberrecht:</strong><br />
+    Die durch uns erstellten Inhalte und Werke auf dieser Website unterliegen dem österreichischen Urheberrecht.
+  </p>
+
+  <p><strong>Medieninhaber & Herausgeber:</strong><br />
+    Dominik Haas & Luca Raffael Moser<br />
+    Privatpersonen<br />
+    Wien, Österreich
+  </p>
+</main>
+
+<footer>
+  <div class="footer-icons">
+    <a href="https://www.instagram.com/bodenlos_event"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.tiktok.com/@bodenlos_event"><i class="fab fa-tiktok"></i></a>
+  </div>
+  <img src="logo2.png" alt="Logo">
+  <div style="margin-top: 10px;">&copy; 2025 Bodenlos</div>
+  <div class="footer-links">
+    <a href="index.html">Startseite</a> |
+    <a href="datenschutz.html">Datenschutz</a> |
+    <a href="agb.html">AGB</a> |
+    <a href="widerruf.html">Widerruf</a>
+  </div>
+</footer>
+<script>
+  // Menü öffnen/schließen
+const toggle = document.getElementById('menu-toggle');
+const sideMenu = document.getElementById('side-menu');
+const closeBtn = document.getElementById('close-btn');
+
+toggle.addEventListener('click', () => {
+  sideMenu.style.left = '0';
+});
+
+closeBtn.addEventListener('click', () => {
+  sideMenu.style.left = '-250px';
+});
+
+</script>
+</body>
+</html>
